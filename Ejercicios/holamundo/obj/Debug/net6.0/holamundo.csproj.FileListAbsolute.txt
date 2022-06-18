@@ -1,0 +1,15 @@
+C:\L2\c-sharp\Ejercicios\holamundo\bin\Debug\net6.0\holamundo.exe
+C:\L2\c-sharp\Ejercicios\holamundo\bin\Debug\net6.0\holamundo.deps.json
+C:\L2\c-sharp\Ejercicios\holamundo\bin\Debug\net6.0\holamundo.runtimeconfig.json
+C:\L2\c-sharp\Ejercicios\holamundo\bin\Debug\net6.0\holamundo.dll
+C:\L2\c-sharp\Ejercicios\holamundo\bin\Debug\net6.0\holamundo.pdb
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.csproj.AssemblyReference.cache
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.GeneratedMSBuildEditorConfig.editorconfig
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.AssemblyInfoInputs.cache
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.AssemblyInfo.cs
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.csproj.CoreCompileInputs.cache
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.dll
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\refint\holamundo.dll
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.pdb
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\holamundo.genruntimeconfig.cache
+C:\L2\c-sharp\Ejercicios\holamundo\obj\Debug\net6.0\ref\holamundo.dll
