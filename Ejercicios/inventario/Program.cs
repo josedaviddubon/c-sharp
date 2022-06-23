@@ -43,6 +43,56 @@
 
             movimientoInventario(codigo, Int32.Parse(cantidad), "+");
         }
+        static void SalidaDeInventario() {
+            string codigo = "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine();
+
+            Console.WriteLine("Salida de Productos al Inventario");
+            Console.WriteLine("**********************************");
+            Console.Write("Ingrese el codigo del producto: ");
+            codigo = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigo, Int32.Parse(cantidad), "-");
+        }
+
+        static void AjustePositivo() {
+            string codigo = "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine();
+
+            Console.WriteLine("Ajuste Positivo al Inventario");
+            Console.WriteLine("**********************************");
+            Console.Write("Ingrese el codigo del producto: ");
+            codigo = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigo, Int32.Parse(cantidad), "+");
+        }
+
+        static void AjusteNegativo() {
+            string codigo = "";
+            string cantidad = "";
+
+            Console.Clear();
+            Console.WriteLine();
+
+            Console.WriteLine("Ajuste Negativo al Inventario");
+            Console.WriteLine("**********************************");
+            Console.Write("Ingrese el codigo del producto: ");
+            codigo = Console.ReadLine();
+            Console.Write("Ingrese la cantidad del producto: ");
+            cantidad = Console.ReadLine();
+
+            movimientoInventario(codigo, Int32.Parse(cantidad), "-");
+        }
 
     static void ListarProductos(){
 
@@ -74,6 +124,8 @@
                 Console.WriteLine("1- Productos");
                 Console.WriteLine("2- Ingreso de Inventario");
                 Console.WriteLine("3- Salida de Inventario");
+                Console.WriteLine("4- Ajuste Positivo de Inventario");
+                Console.WriteLine("5- Ajuste Negativo de Inventario");
                 Console.WriteLine("0- Salida");
                 opcion = Console.ReadLine();
 
@@ -89,6 +141,17 @@
                         //Console.ReadLine();
                     break;
                     }
+                    case "3":
+                        SalidaDeInventario();
+                    break;
+
+                    case "4":
+                        AjustePositivo();
+                    break;
+
+                    case "5":
+                        AjusteNegativo();
+                    break;
                     default:
                     break;
                 }
