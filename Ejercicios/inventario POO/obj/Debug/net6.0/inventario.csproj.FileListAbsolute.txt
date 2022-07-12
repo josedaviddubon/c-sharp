@@ -1,0 +1,30 @@
+C:\L2\c-sharp\Ejercicios\inventario\bin\Debug\net6.0\inventario.exe
+C:\L2\c-sharp\Ejercicios\inventario\bin\Debug\net6.0\inventario.deps.json
+C:\L2\c-sharp\Ejercicios\inventario\bin\Debug\net6.0\inventario.runtimeconfig.json
+C:\L2\c-sharp\Ejercicios\inventario\bin\Debug\net6.0\inventario.dll
+C:\L2\c-sharp\Ejercicios\inventario\bin\Debug\net6.0\inventario.pdb
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.csproj.AssemblyReference.cache
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.AssemblyInfoInputs.cache
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.AssemblyInfo.cs
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.csproj.CoreCompileInputs.cache
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.dll
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\refint\inventario.dll
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.pdb
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\inventario.genruntimeconfig.cache
+C:\L2\c-sharp\Ejercicios\inventario\obj\Debug\net6.0\ref\inventario.dll
+C:\L2\c-sharp\Ejercicios\inventario POO\bin\Debug\net6.0\inventario.exe
+C:\L2\c-sharp\Ejercicios\inventario POO\bin\Debug\net6.0\inventario.deps.json
+C:\L2\c-sharp\Ejercicios\inventario POO\bin\Debug\net6.0\inventario.runtimeconfig.json
+C:\L2\c-sharp\Ejercicios\inventario POO\bin\Debug\net6.0\inventario.dll
+C:\L2\c-sharp\Ejercicios\inventario POO\bin\Debug\net6.0\inventario.pdb
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.csproj.AssemblyReference.cache
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.AssemblyInfoInputs.cache
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.AssemblyInfo.cs
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.csproj.CoreCompileInputs.cache
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.dll
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\refint\inventario.dll
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.pdb
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\inventario.genruntimeconfig.cache
+C:\L2\c-sharp\Ejercicios\inventario POO\obj\Debug\net6.0\ref\inventario.dll
