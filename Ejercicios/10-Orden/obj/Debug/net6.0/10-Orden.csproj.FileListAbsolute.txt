@@ -1,0 +1,15 @@
+C:\L2\c-sharp\Ejercicios\10-Orden\bin\Debug\net6.0\10-Orden.exe
+C:\L2\c-sharp\Ejercicios\10-Orden\bin\Debug\net6.0\10-Orden.deps.json
+C:\L2\c-sharp\Ejercicios\10-Orden\bin\Debug\net6.0\10-Orden.runtimeconfig.json
+C:\L2\c-sharp\Ejercicios\10-Orden\bin\Debug\net6.0\10-Orden.dll
+C:\L2\c-sharp\Ejercicios\10-Orden\bin\Debug\net6.0\10-Orden.pdb
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.csproj.AssemblyReference.cache
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.GeneratedMSBuildEditorConfig.editorconfig
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.AssemblyInfoInputs.cache
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.AssemblyInfo.cs
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.csproj.CoreCompileInputs.cache
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.dll
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\refint\10-Orden.dll
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.pdb
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\10-Orden.genruntimeconfig.cache
+C:\L2\c-sharp\Ejercicios\10-Orden\obj\Debug\net6.0\ref\10-Orden.dll
