@@ -1,0 +1,15 @@
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.csproj.AssemblyReference.cache
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.GeneratedMSBuildEditorConfig.editorconfig
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.AssemblyInfoInputs.cache
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.AssemblyInfo.cs
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.csproj.CoreCompileInputs.cache
+C:\L2\c-sharp\Ejercicios\PilaresPOO\bin\Debug\net6.0\PilaresPOO.exe
+C:\L2\c-sharp\Ejercicios\PilaresPOO\bin\Debug\net6.0\PilaresPOO.deps.json
+C:\L2\c-sharp\Ejercicios\PilaresPOO\bin\Debug\net6.0\PilaresPOO.runtimeconfig.json
+C:\L2\c-sharp\Ejercicios\PilaresPOO\bin\Debug\net6.0\PilaresPOO.dll
+C:\L2\c-sharp\Ejercicios\PilaresPOO\bin\Debug\net6.0\PilaresPOO.pdb
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.dll
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\refint\PilaresPOO.dll
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.pdb
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\PilaresPOO.genruntimeconfig.cache
+C:\L2\c-sharp\Ejercicios\PilaresPOO\obj\Debug\net6.0\ref\PilaresPOO.dll

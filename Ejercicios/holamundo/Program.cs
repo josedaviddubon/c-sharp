@@ -4,6 +4,42 @@ namespace inventario
 {
     class Program
     {
+
+
+        //////////////////////////////////////////////////////////////////////////////////
+//  *\
+//     public void Perro()
+//     {
+//       Mamiferos mamiferos = new Mamiferos();
+//       mamiferos.Nombre = "Oso";
+//       Comer();
+//       Dormir();
+//       Caminar();
+//       Ladrar();
+//     }
+
+
+//     public void Gato()
+//     {
+//       mamiferos.Nombre = "Miller";
+//       Comer();
+//       Dormir();
+//       Caminar();
+//       Maullar();
+//     }
+
+
+
+//     public void Mono()
+//     {
+//       mamiferos.Nombre = "Botas";
+//       Comer();
+//       Dormir();
+//       Caminar();
+//       Maullar();
+//     }
+
+// \*
         static void main(string[] args)
         {
             int opcion = 0;
