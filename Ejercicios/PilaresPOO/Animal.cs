@@ -5,6 +5,8 @@ public class Animal
 {
     public string Nombre { get; set; }
 
+    Nombre = '';
+
     public void Dormir()
     {
         Console.WriteLine("Duermen");
