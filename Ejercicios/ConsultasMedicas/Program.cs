@@ -19,6 +19,7 @@ namespace ConsultasMedicas // Note: actual namespace depends on the project name
                 Console.WriteLine("\tc - Listado de Pacientes");
                 Console.WriteLine("\td - Revisar Consultas");
                 Console.Write("Cual es tu Opcion? ");
+                Console.Write("Cual es tu Opcion? ");
                 opcion = Console.ReadLine();
 
             switch(opcion)
