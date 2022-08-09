@@ -1,23 +1,38 @@
-//   class Opciones 
-// { 
-//     public void Opciones(string op)
-//     {
+using System;
+using System.Collections.Generic;
 
-//         switch (op)
-//         {
-//             case "a":
-//                    Console.WriteLine("\td - consulta");
-//                 break;
-//             case "s":
-//                     Console.WriteLine("\td - Pacientes");
-//                 break;
-//             case "m":
-//                    Console.WriteLine("\td - Medico");
-//                 break;
-//             // Return text for an incorrect option entry.
-//             default:
-//                 break;
-//         }
-//         return result;
-//     }
-// }
+public class Opciones 
+{ 
+    public List<Medico> ListaMedicos {get; set;}
+    public List<Paciente> ListaPacientes { get;  set; }
+    public List<Consulta> ListaConsulta { get; set; }
+
+    public Opciones()
+    {
+        ListaMedicos = new List<Medico>();
+        CargarMedicos();
+
+        ListaPacientes = new List<Paciente>();
+        CargarPacientes();
+
+        ListaConsulta = new List<Consulta>();
+        CargarConsulta();
+
+    }
+
+    private void CargarConsulta()
+    {
+        Console.WriteLine("\ts - Consultas");
+    }
+
+    private void CargarPacientes()
+    {
+       Console.WriteLine("\ts - Pacientes");
+    }
+
+    private void CargarMedicos()
+    {
+        Console.WriteLine("\ts - Medicos");
+    }
+
+}

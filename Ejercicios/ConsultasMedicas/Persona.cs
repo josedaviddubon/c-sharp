@@ -1,6 +1,5 @@
 public class Persona {
 
-    private string _PrimerNombre = default!;
     public int Id {get; set;}
     public int NumeroIdentidad { get; set; }
     public string PrimerNombre { get; set; }
