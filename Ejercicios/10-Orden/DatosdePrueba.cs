@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public class DatosdePrueba
 {
     public List<Producto> ListadeProductos { get; set; }
-    public List<Cliente> ListadeClientes { get; set; }
+    public List<Cliente>    ListadeClientes { get; set; }
     public List<Vendedor> ListadeVendedores { get; set; }
     public List<Orden> ListaOrdenes { get; set; }
 
@@ -132,7 +132,7 @@ public class DatosdePrueba
 
         int nuevoCodigo = ListaOrdenes.Count + 1;
 
-        Orden nuevaOrden = new Orden(nuevoCodigo, DateTime.Now, "SPS" + nuevoCodigo, cliente, vendedor);
+        Orden nuevaOrden = new Orden(nuevoCodigo, DateTime.Now, "SPS2" + nuevoCodigo, cliente, vendedor);
         ListaOrdenes.Add(nuevaOrden);
 
         while(true)

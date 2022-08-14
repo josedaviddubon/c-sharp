@@ -3,3 +3,13 @@ C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ConsultasMedicas.Gene
 C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ConsultasMedicas.AssemblyInfoInputs.cache
 C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ConsultasMedicas.AssemblyInfo.cs
 C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ConsultasMedicas.csproj.CoreCompileInputs.cache
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\bin\Debug\net6.0\ConsultasMedicas.exe
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\bin\Debug\net6.0\ConsultasMedicas.deps.json
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\bin\Debug\net6.0\ConsultasMedicas.runtimeconfig.json
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\bin\Debug\net6.0\ConsultasMedicas.dll
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\bin\Debug\net6.0\ConsultasMedicas.pdb
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ConsultasMedicas.dll
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\refint\ConsultasMedicas.dll
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ConsultasMedicas.pdb
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ConsultasMedicas.genruntimeconfig.cache
+C:\L2\c-sharp\Ejercicios\ConsultasMedicas\obj\Debug\net6.0\ref\ConsultasMedicas.dll

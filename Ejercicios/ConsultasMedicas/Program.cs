@@ -1,48 +1,50 @@
-﻿using System;
-
-namespace ConsultasMedicas // Note: actual namespace depends on the project name.
+﻿namespace ConsultasMedicas
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Opciones opciones = new Opciones();
+            Datos datos = new Datos();
             string opcion = "";
-            
-            while(true)
+
+            while (true)
             {
                 Console.WriteLine("Consola Consultas Medicas - Proyecto Final L2\r");
                 Console.WriteLine("------------------------\n");
                 Console.WriteLine("Elige una opcion de la Siguiente lista:");
-                Console.WriteLine("\ta - Lista de Medicos");
-                Console.WriteLine("\tb - Consultas");
-                Console.WriteLine("\tc - Listado de Pacientes");
-                Console.WriteLine("\td - Revisar Consultas");
-                Console.Write("Cual es tu Opcion? ");
+                Console.WriteLine("\t1 - Lista de Consultas");
+                Console.WriteLine("\t2 - Lista de Medicos");
+                Console.WriteLine("\t3 - Listado de Pacientes");
+                Console.WriteLine("\t4 - Ingresar Consulta");
+                Console.WriteLine("\t0 - Salir");
                 Console.Write("Cual es tu Opcion? ");
                 opcion = Console.ReadLine();
 
-            switch(opcion)
-            {
-                case "a":
-                //opciones.ListaConsulta();
-                    break;
-                case "b":
-                //opciones.ListaMedicos();
-                
-                    break;
-                case "c":
-                
-                //opciones.ListaPacientes();
-                    break;
-                default:
-                    break;
+                switch (opcion)
+                {
+                    case "1":
+                    datos.ListarConsulta();
+                        break;
+                    case "2":
+                    datos.ListarMedicos();
+                        break;
+                    case "3":
+                        datos.ListarPacientes();
+                        break;
+                    case "4":
+                        datos.CrearConsulta();
+                        break;      
+                    case "5":
+                        //datos.ListarOrdenes();
+                        break;                                          
+                    default:
+                        break;
+                }
 
+                if (opcion == "0") {
+                    break;
+                }
             }
-            if (opcion == "0")
-                break;
-            }
-
         }
     }
 }
