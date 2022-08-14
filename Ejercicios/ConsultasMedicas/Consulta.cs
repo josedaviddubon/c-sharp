@@ -32,13 +32,17 @@ public class Consulta
     {
         int nuevoCodigo = ListaDetalleConsulta.Count + 1;
 
-        DetalleConsulta o = new DetalleConsulta(nuevoCodigo, 1, cita);
+        DetalleConsulta o = new DetalleConsulta(nuevoCodigo, 1, cita, true);
         ListaDetalleConsulta.Add(o);
 
     }
 
-    public void InactivarConsulta()
-    {   
+    public void InactivarConsulta(Cita cita)
+    {  
+        int nuevoCodigo = ListaDetalleConsulta.Count + 1;
+
+        DetalleConsulta o = new DetalleConsulta(nuevoCodigo, 1, cita, false);
+        ListaDetalleConsulta.Add(o);
         Activo = false;
     }
 

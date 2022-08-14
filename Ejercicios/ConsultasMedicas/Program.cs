@@ -16,6 +16,7 @@
                 Console.WriteLine("\t2 - Lista de Medicos");
                 Console.WriteLine("\t3 - Listado de Pacientes");
                 Console.WriteLine("\t4 - Ingresar Consulta");
+                Console.WriteLine("\t5 - Cambiar estado de la Consulta");
                 Console.WriteLine("\t0 - Salir");
                 Console.Write("Cual es tu Opcion? ");
                 opcion = Console.ReadLine();
@@ -35,7 +36,7 @@
                         datos.CrearConsulta();
                         break;      
                     case "5":
-                        //datos.ListarOrdenes();
+                        datos.EstadoConsulta();
                         break;                                          
                     default:
                         break;

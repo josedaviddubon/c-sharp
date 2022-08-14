@@ -39,8 +39,12 @@ public class Datos
     public void ListarConsulta()
     {
         Console.Clear();
+        Console.WriteLine("Lista de Consultas");
         Console.WriteLine("==================");
-        Console.WriteLine("");
+        Console.WriteLine("Codigo | Descripcion |  Estado | Comentarios | Diagnostico | Fecha |");
+        Console.WriteLine("Paciente | Medico");
+        Console.WriteLine("======================");
+        Console.WriteLine("");  
 
         foreach (var consulta in ListaConsulta)
         {
@@ -48,16 +52,21 @@ public class Datos
            if(consulta.Activo == true)
            {
                 var activo = "Abierta";
-                Console.WriteLine(consulta.Id + " |" + consulta.Descripciones + " |" + activo + " | " +" | " + consulta.Comentarios + " | " + consulta.Diagnostico + " |" + consulta.FechaConsulta );
+                Console.WriteLine(consulta.Id + " |" + consulta.Descripciones + " |" + activo + " | " +" | " + consulta.Comentarios + " | " + consulta.Diagnostico + " |" + consulta.FechaConsulta);
+                 Console.WriteLine(consulta.Paciente.PrimerNombre + " | " + consulta.Paciente.PrimerApellido);
+                 Console.WriteLine(consulta.Medico.PrimerNombre + " | " + consulta.Medico.PrimerApellido);
            }
            else
            {
             var terminada = "Terminada";
-             Console.WriteLine(consulta.Id + " |" + consulta.Descripciones +     " |" + terminada +  " | " + consulta.Comentarios + " | " + consulta.Diagnostico + " |" + consulta.FechaConsulta);
+            Console.WriteLine(consulta.Id + " |" + consulta.Descripciones +     " |" + terminada +  " | " + consulta.Comentarios + " | " + consulta.Diagnostico + " |" + consulta.FechaConsulta);
+            Console.WriteLine(consulta.Paciente.PrimerNombre + " | " + consulta.Paciente.PrimerApellido);
+            Console.WriteLine(consulta.Medico.PrimerNombre + " | " + consulta.Medico.PrimerApellido);
            }
            foreach (var detalle in consulta.ListaDetalleConsulta)
            {
-                Console.WriteLine(" " + detalle.Cita.Descripcion + " | " + detalle.Costo);
+                Console.WriteLine("Descripcion |  Costo |");
+                Console.WriteLine(" " + detalle.Cita.Descripcion + " | " + detalle.Cita.Costo);
            }
         }
 
@@ -87,7 +96,7 @@ public class Datos
         
         foreach (var paciente in ListaPacientes)
         {
-            Console.WriteLine(paciente.Codigo + " | " + paciente.PrimerApellido + " | " + paciente.Sexo);
+            Console.WriteLine(paciente.Codigo + " | " + paciente.PrimerNombre + " | " + paciente.PrimerApellido);
         }
 
         Console.ReadLine();
@@ -95,41 +104,119 @@ public class Datos
 
     private void cargarCita()
     {
-        Cita c1 = new Cita(1, "Consulta General", 150);
+        Cita c1 = new Cita(1, "Consulta General", 150, true);
         ListaCita.Add(c1);
 
-        Cita c2 = new Cita(2, "Emergencia", 200);
+        Cita c2 = new Cita(2, "Emergencia", 200, true);
         ListaCita.Add(c2);
 
-        Cita c3 = new Cita(3, "Chequeo Rutinario", 100);
+        Cita c3 = new Cita(3, "Chequeo Rutinario", 100, true);
         ListaCita.Add(c3);
     }
     
     private void cargarMedico()
     {
 
-        Medico m1 = new Medico(1, "Juan", true);
+        Medico m1 = new Medico(1, "Dr. Jose Angel", true);
         ListaMedicos.Add(m1);
 
-        Medico m2 = new Medico(2, "Pedro", true);
+        Medico m2 = new Medico(2, "Dr. Ana Sabillon", true);
         ListaMedicos.Add(m2);
 
-        Medico m3 = new Medico(3, "Jose", false);
+        Medico m3 = new Medico(3, "Dr.Erza Miller", false);
         ListaMedicos.Add(m3);
     }
 
     private void cargarPacientes()
     {
-        Paciente p1 = new Paciente(1, "Juan", "77777");
+        Paciente p1 = new Paciente(1, "Pablo", "Way");
         ListaPacientes.Add(p1);
 
-        Paciente p2 = new Paciente(2, "Pedro", "99999");
+        Paciente p2 = new Paciente(2, "Fernando", "Herrera");
         ListaPacientes.Add(p2);
     }
 
     public void CrearConsulta()
     {
         Console.WriteLine("Creando Consulta");
+        Console.WriteLine("=============");
+        Console.WriteLine("");
+
+        Console.WriteLine("Ingrese el codigo del Paciente: ");
+        string codigoPaciente = Console.ReadLine();
+
+        Paciente paciente = ListaPacientes.Find(c => c.Codigo.ToString() == codigoPaciente);
+        if(paciente ==null)
+        {
+            Console.WriteLine("Paciente no encontrado");
+            Console.ReadLine();
+            return;
+        }else
+        {
+            Console.WriteLine("Paciente: " + paciente.PrimerNombre + "" + paciente.PrimerApellido);
+            Console.WriteLine("");
+        }
+
+        Console.WriteLine("Ingrese el codigo del Medico: ");
+        string codigoMedico = Console.ReadLine();
+
+        Medico medico = ListaMedicos.Find(v => v.Codigo.ToString() == codigoMedico);
+        if (medico == null) 
+        {
+            Console.WriteLine(" Medico no encontrado");
+            Console.ReadLine();
+            return;
+        } 
+        else if (medico.Disponibilidad == false)
+        {
+            Console.WriteLine(" Medico no Disponible");
+            Console.ReadLine();
+            return;
+            
+        }
+        else {
+            Console.WriteLine("Medcico: " + medico.PrimerNombre + " " + medico.PrimerApellido);
+            Console.WriteLine("");
+        }
+        int nuevoCodigo = ListaConsulta.Count + 1;
+
+        Console.WriteLine("Ingrese Codigo: ");
+        string codigo = Console.ReadLine();
+
+        Console.WriteLine("Ingrese Descripcion: ");
+        string NuevaDescripcion = Console.ReadLine();
+
+        Console.WriteLine("Ingrese Comentario: ");
+        string NuevoComentario = Console.ReadLine();
+
+        Console.WriteLine("Ingrese Diagnostico Preliminar: ");
+        string nuevoDiagnostico = Console.ReadLine();
+
+        Consulta nuevaConsulta = new Consulta(nuevoCodigo, codigo, NuevaDescripcion, NuevoComentario, nuevoDiagnostico, true, DateTime.Now, paciente, medico );
+        ListaConsulta.Add(nuevaConsulta);
+
+        while(true)
+        {
+            Console.WriteLine("Asigne La Cita: ");
+            string codigoCita   = Console.ReadLine();
+            Cita cita = ListaCita.Find(p => p.Codigo.ToString() == codigoCita);        
+            if (cita == null)
+            {
+                Console.WriteLine("Tipo de Cita no encontrado");
+                Console.ReadLine();
+            } else {
+                Console.WriteLine("Cita Agregada: " + cita.Codigo);
+                nuevaConsulta.AgregarConsulta(cita);
+            }
+             break;
+        }
+
+
+    }
+
+     public void EstadoConsulta()
+    {
+        Console.WriteLine("Estado Consulta");
         Console.WriteLine("=============");
         Console.WriteLine("");
 
@@ -183,27 +270,37 @@ public class Datos
         Console.WriteLine("Ingrese Diagnostico Preliminar: ");
         string nuevoDiagnostico = Console.ReadLine();
 
-        Consulta nuevaConsulta = new Consulta(nuevoCodigo, codigo, NuevaDescripcion, NuevoComentario, nuevoDiagnostico, true, DateTime.Now, paciente, medico );
-        ListaConsulta.Add(nuevaConsulta);
+
+        Consulta EstadoConsulta = new Consulta(nuevoCodigo, codigo, NuevaDescripcion, NuevoComentario, nuevoDiagnostico, false, DateTime.Now, paciente, medico );
+        ListaConsulta.Add(EstadoConsulta);
 
         while(true)
         {
             Console.WriteLine("Asigne La Cita: ");
             string codigoCita   = Console.ReadLine();
-            Cita cita = ListaCita.Find(p => p.Codigo.ToString() == codigoCita);        
+            Cita cita = ListaCita.Find(p => p.Codigo.ToString() == codigoCita);   
+
+            Console.WriteLine("Desea Desactivar? s/n");
+            string continuar = Console.ReadLine();
+            if (continuar.ToLower() == "n") {
+                break;
+            }   
             if (cita == null)
             {
                 Console.WriteLine("Tipo de Cita no encontrado");
                 Console.ReadLine();
             } else {
-                Console.WriteLine("Consulta Agregada: " + cita.Codigo);
-                nuevaConsulta.AgregarConsulta(cita);
+                Console.WriteLine("Consulta Desactivda: " + cita.Codigo);
+                EstadoConsulta.InactivarConsulta(cita);
             }
-             break;
+            break;
+
         }
 
 
     }
+
+
 
     #region 
     /*
@@ -239,22 +336,7 @@ public class Datos
 
             EstadoConsulta(idConsulta, Int32.Parse(IdPaciente),Int32.Parse(IdMedico), true, Descripcion, Comentarios );
 
-                private void EstadoConsulta(int idConsulta, int IdPaciente, int IdMedico, bool Activo, string descripcion, string comentarios)
-    {
-        foreach (var consulta in ListaConsulta)
-        {
-            if(consulta.Id == idConsulta)
-            {
-                if(consulta.Activo == true)
-                {
 
-                }else
-                {
-
-                }
-            }
-        }
-    }
     }
     */
     #endregion

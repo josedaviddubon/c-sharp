@@ -6,10 +6,13 @@ public class DetalleConsulta
 
     public Cita Cita {get; set;}
 
-    public DetalleConsulta(int codigo, double costo, Cita cita)
+    public bool Estado {get; set;}
+
+    public DetalleConsulta(int codigo, double costo, Cita cita, bool estado)
     {
         Codigo = codigo;
         Costo = costo;
+        Estado = estado;
         Cita = cita;
         
     }
