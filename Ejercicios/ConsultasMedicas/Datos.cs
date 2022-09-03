@@ -82,6 +82,7 @@ public class Datos
         
         foreach (var medico in ListaMedicos)
         {
+            Console.WriteLine("Codigo | Primer Nombre |  Primer Apellido |");
             Console.WriteLine(medico.Codigo + " | " + medico.PrimerNombre + " | " + medico.Disponibilidad);
         }
 
@@ -95,7 +96,9 @@ public class Datos
         Console.WriteLine("");
         
         foreach (var paciente in ListaPacientes)
+
         {
+             Console.WriteLine("Codigo | Primer Nombre |  Primer Apellido |");
             Console.WriteLine(paciente.Codigo + " | " + paciente.PrimerNombre + " | " + paciente.PrimerApellido);
         }
 
@@ -231,7 +234,7 @@ public class Datos
             return;
         }else
         {
-            Console.WriteLine("Paciente: " + paciente.PrimerNombre + "" + paciente.SegundoNombre);
+            Console.WriteLine("Paciente: " + paciente.PrimerNombre + " " + paciente.SegundoNombre);
             Console.WriteLine("");
         }
 
